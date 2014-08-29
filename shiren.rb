@@ -16,7 +16,7 @@ DataMapper.finalize.auto_upgrade!
 end
 
 get "/" do
-  @run = DungeonRun.all
+  @run = DungeonRun.all :order => :score.desc
   erb :home
 end
 

@@ -14,11 +14,14 @@
 
 </form>
 <table border="1">
+  <th>Dungeon</th>
+  <th>Score</th>
+  <th>Completed</th>
     <%  @run.each do |item|  %>
   <tr>
       <td> <p> <%= item.dungeon %></p></td>
       <td> <p> <%= item.score %></p></td>
-      <td> <p> <%= item.complete %></p></td>
+      <td> <p> <%= item.complete ? "Yes" : "No" %></p></td>
     <% end %>
 </tr>
 </table>
