@@ -1,0 +1,16 @@
+<form action="/" method="post" >
+  <input type="text" name="dungeon" placeholder= "Dungeon" >
+  <input type="text" name="score" placeholder="Score" >
+  <input type="checkbox" name="complete" value="true"  >
+  <input type="submit" >
+
+</form>
+<table border="1">
+    <%  @run.each do |item|  %>
+  <tr>
+      <td> <p> <%= item.dungeon %></p></td>
+      <td> <p> <%= item.score %></p></td>
+      <td> <p> <%= item.complete %></p></td>
+    <% end %>
+</tr>
+</table>
