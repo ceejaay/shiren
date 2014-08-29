@@ -25,6 +25,11 @@ post "/" do
   redirect "/"
 end
 
+get "/:id" do 
+  @run = DungeonRun.get params[:id]
+  erb :show
+end
+
 get "/blerg" do
   erb :blerg1
 end
@@ -32,7 +37,8 @@ end
 post "/blerg" do
   @data = params
   erb :blerg
-  
 end
+
+
 
 
