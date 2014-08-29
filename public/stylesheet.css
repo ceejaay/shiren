@@ -1,0 +1,21 @@
+body {
+  background: grey;
+  }
+
+.form {
+  float: right;
+  background: white;
+  width: 33%;
+  padding: 10px;
+  }
+
+.main {
+  width: 33%;
+  height: 100%;
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 20px;
+
+  }
+
+
