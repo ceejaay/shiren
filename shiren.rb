@@ -22,10 +22,10 @@ class DungeonRun
   property :shield, Text, :required => true
   property :armband, Text, :required => true
   property :approved, Boolean, :default => false
-  
-DataMapper.finalize.auto_upgrade!
+
 
 end
+DataMapper.finalize.auto_upgrade!
 
 get "/" do
   @run = DungeonRun.all :order => :score.desc
@@ -42,13 +42,12 @@ get "/:id" do
   erb :show
 end
 
-get "/blerg" do
-  erb :blerg1
+get "/user/new" do
+  erb :new_user
 end
 
-post "/blerg" do
-  @data = params
-  erb :blerg
+post "/user/new" do
+  
 end
 
 
