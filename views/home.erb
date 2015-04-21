@@ -31,11 +31,11 @@
   <th>Completed</th>
     <%  @run.each do |item|  %>
   <tr>
-      <td> <p> <%= item.user %></p></td>
+      <td> <p>User data here </p></td>
       <td> <p><a href="/<%= item.id %>"><%= item.dungeon %></a></p></td>
 
       <td> <p> <%= item.score %></p></td>
       <td> <p> <%= item.complete ? "Yes" : "No" %></p></td>
     <% end %>
-</tr>
+  </tr>
 </table>
